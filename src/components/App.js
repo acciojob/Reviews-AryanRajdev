@@ -46,8 +46,8 @@ const App = () => {
 
   return (
     <div id = "main">
-      <div className = "container" id = "review-heading" style={{textAlign:"center"}}>
-        <h1>Our Reviews</h1>
+      <div className = "container" style={{textAlign:"center"}}>
+        <h1 id = "review-heading">Our Reviews</h1>
         <Review data = {data} />
       </div>
     </div>
