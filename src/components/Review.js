@@ -25,7 +25,7 @@ const Review = ({ data }) => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div className="review">
-        <h2 key = {`author-${current.id}`} className="author">{current.name}</h2>
+        <h2 id = {`author-${current.id}`} className="author">{current.name}</h2>
         <img src={current.image} className="person-img" />
         <h3 className="job">{current.job}</h3>
         <p className="info">{current.text}</p>
@@ -34,7 +34,7 @@ const Review = ({ data }) => {
             Previous
           </button>
           <button className="random-btn" onClick={handleRandom}>
-            Suprise me
+            surprise me
           </button>
           <button className="next-btn" onClick={handleNext}>
             Next
